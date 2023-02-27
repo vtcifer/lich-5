@@ -2153,6 +2153,8 @@ elsif ARGV.include?('--fallen')
     $frontend = 'stormfront'
   elsif ARGV.grep(/--genie/).any?
     $frontend = 'genie'
+  elsif ARGV.grep(/--frostbite/).any?
+    $frontend = 'frostbite'
   else
     $frontend = 'unknown'
   end
